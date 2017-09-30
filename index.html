@@ -38,7 +38,11 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/headScript.js"></script>
 
+    <script src="js/papaparse.min.js"></script>
+
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <script src="js/d3.v4.min.js"></script>
 
   </head>
 
@@ -69,23 +73,9 @@
       </div>
     </header>
 
-
     <div class="darkBar"></div>
     <div class="redBar"></div>
     <div class="darkBar"></div>
-
-    <!--<section id="intro2" class="bg-dark2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Welcome to the world of Unturned Stones</h2>
-            <hr class="full">
-            <p>Unturned Stones is a worldbuilding project; essentially, it is a fictional setting developed for the sake of <span style="text-decoration: line-through;">futility</span> immersing a viewer in a world very different from our own. It might become the grounds for a short story, a video game, a board game, or one of a million other things - but for now, enjoy the scenery!</p>
-            <p>Make sure to visit the subreddit <a href="https://www.reddit.com/r/worldbuilding/" target="_blank">/r/worldbuilding</a> to learn more, and feel free to join the associated Discord chat server.</p>
-          </div>
-        </div>
-      </div>
-    </section>-->
 
     <section id="intro" class="bg-dark">
       <div class="container">
@@ -148,9 +138,6 @@
         </div>
       </div>
     </section>
-
-    <!-- style="background-image: url(img/hedgehog.jpg); background-attachment: fixed; background-size: cover; background-position: 50% 50%;"
-      <div style="position: absolute; width: 100%; height: 100%; margin-top: -50px; background-color: rgba(0,0,0,0.9);"></div> -->
 
     <section id="themes3" class="bg-dark2 themeSection" style="box-shadow: inset 0 0 50px rgba(0,0,0,0.5);">
       <div class="container">
@@ -238,6 +225,25 @@
             <div class="noShowMobile rightBorder"></div>
             <div class="noShowMobile rightBorderBottom"></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="type680" class="bg-gun" style="box-shadow: inset 0 0 50px rgba(0,0,0,0.5);">
+      <div class="container">
+        <div class="row">
+          <img src="img/type680base.png" style="width: 1140px; height: 542px;" /> 
+          <div id="type680SVG"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="type680desc" class="bg-dark themeSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div id="type680target" class="col-lg-8">Hover over the points on the Type 680 image to learn more about the weapon.</div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
     </section>
@@ -426,7 +432,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
 
-    <!--<script src="js/main.js"></script>-->
+    <script src="js/type680.js"></script>
     
 
   </body>

@@ -174,9 +174,9 @@ header.masthead {
   color: #E5E5E5;
 }
 
-.bg-dark3 {
-  background-color: #151515 !important;
-  color: #E5E5E5;
+.bg-gun {
+  background-color: #C4C4C4 !important;
+  color: #000;
 }
 
 .themeSection {
@@ -239,3 +239,6 @@ header.masthead {
 }
 
 
+#type680target {
+  height: 200px;
+}
