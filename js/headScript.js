@@ -53,18 +53,18 @@ $(document).ready(function() {
 function quoteShuffle(){
 
   if (numberOfLines > 12) {
-    $('#quoteShuffle').find('span').first().remove();
+    $('#quoteShuffle').find('div').first().remove();
   }
   else {
     numberOfLines++;
   }
 
   if (lineNumber < 15){
-    $('#quoteShuffle').append('<span style="pointer-events: none;">' + quotes[lineNumber++] + '</span>');
+    $('#quoteShuffle').append('<div style="pointer-events: none; overflow-anchor: none;">' + quotes[lineNumber++] + '</div>');
   }
   else {
     lineNumber = 0;
-    $('#quoteShuffle').append('<span style="pointer-events: none;">' + quotes[lineNumber++] + '</span>');
+    $('#quoteShuffle').append('<div style="pointer-events: none; overflow-anchor: none;">' + quotes[lineNumber++] + '</div>');
   }
 
   setTimeout(function() { quoteShuffle(); }, Math.floor(Math.random() * 300));

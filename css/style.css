@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Dosis', Arial, sans-serif;
+  font-family: 'Inconsolata', Arial, sans-serif;
+  /* Dosis */
 }
 
 /* Types of Horizontal Rules */
@@ -47,6 +48,11 @@ hr.full {
 
 hr.light {
   border-color: #9f1212;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* Link Styling */
