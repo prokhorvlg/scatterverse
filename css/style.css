@@ -1,0 +1,180 @@
+/*!
+ * Start Bootstrap - Createive v4.0.0-beta (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
+ /* Primary Classes */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Primary Fonts Used */
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Dosis', Arial, sans-serif;
+}
+
+/* Types of Horizontal Rules */
+
+hr {
+  width: 150px;
+  border-width: 4px;
+  border-color: #fff;
+}
+
+hr.full {
+  width: 100%;
+  border-width: 2px;
+  border-color: #fff;
+}
+
+hr.light {
+  border-color: #9f1212;
+}
+
+/* Link Styling */
+
+a {
+  color: #e25a67;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  a:focus, a:hover {
+    color: #e8949b; }
+
+/* Paragraph Styling */
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+header.masthead {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: white;
+  background: #101010;
+  }
+  header.masthead .header-content {
+    position: relative;
+    width: 100%;
+    padding: 150px 15px 100px;
+    text-align: center; }
+    header.masthead .header-content .header-content-inner h1 {
+      letter-spacing: 0.1em;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-family: Inconsolata, sans-serif;
+    }
+    header.masthead .header-content .header-content-inner img {
+      width: 150px;
+      height: 150px;
+    }
+    header.masthead .header-content .header-content-inner .boldSpan {
+      margin-left: 0.1em;
+    }
+    header.masthead .header-content .header-content-inner hr {
+      margin: 30px auto; }
+  @media (min-width: 768px) {
+    header.masthead {
+      height: 300px; }
+      header.masthead .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        header.masthead .header-content .header-content-inner {
+          max-width: 1000px;
+          margin-right: auto;
+          margin-left: auto; }
+          header.masthead .header-content .header-content-inner h1 {
+            font-size: 40px;
+
+          }
+          header.masthead .header-content .header-content-inner img {
+            width: 300px;
+            height: 300px;
+          }
+          header.masthead .header-content .header-content-inner .boldSpan {
+            margin-left: 1em;
+          } }
+
+.darkBar {
+  width: 100%;
+  height: 50px;
+  background: #101010;
+}
+@media (min-width: 768px) {
+  .darkBar {
+    height: 100px;
+  }
+}
+
+.quoteShuffle {
+  position: absolute; 
+  text-align: left; 
+  font-family: Inconsolata, sans-serif;
+  margin-left: 20%;
+  font-size: 10px;
+  color: #101010;
+  font-weight: 700;
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .quoteShuffle {
+    margin-left: 340px;
+    font-size: 15px;
+  }
+}
+
+
+.redBar {
+  width: 100%;
+  height: 5px;
+  background: #790d0d;
+}
+
+.bg-dark {
+  background-color: #1f1f1f !important;
+  color: #E5E5E5;
+}
+
+.bg-dark2 {
+  background-color: #101010 !important;
+  color: #E5E5E5;
+}
+
+.blinkingScore {
+  animation: score-opacity 1s infinite;
+}
+
+@keyframes score-opacity {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
