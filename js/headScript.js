@@ -1,4 +1,4 @@
-var quotes = ["INTELLISOURCE CONSOLE (2671-C)<br>",
+/*var quotes = ["INTELLISOURCE CONSOLE (2671-C)<br>",
   "THIS COMPUTER IS NETWORKED: 2C<br>",
   "**************<br>",
   "<br>",
@@ -13,7 +13,56 @@ var quotes = ["INTELLISOURCE CONSOLE (2671-C)<br>",
   "<br>",
   "BASE:&gt;&gt; run B:\\grid_ops\\mbFile.f<br>",
   "WARNING !!! TOP SECRET !!!<br>",
-  "<br>"];
+  "<br>"];*/
+
+var quotes = ["OPS CONSOLE (2671-C)<br>",
+"******************************<br>",
+"* THIS IS A SECURE SYSTEM.   *<br>",
+"* ALL OPERATIONS ARE LOGGED. *<br>",
+"******************************<br>",
+"<br>" ,
+"USERNAME: rafikh<br>",
+"LOGIN1: ****************<br>",
+"LOGIN2: KEYID.....ACCEPT<br>",
+"LOGIN3: FACEID....ACCEPT<br>",
+"<br>" ,
+"[rafikh@2671-C:~]$ sudo opscloak<br>",
+"Password: ****************<br>",
+"[DHUL_AQ@2671-C:~]$ cd ~/gridops<br>",
+"[DHUL_AQ@2671-C:~]$ ssh cim_asset_134422 exploit_A<br>",
+"[XXXXXX@[REDACT]:~]# cd /operations<br>",
+"[XXXXXX@[REDACT]:~]# ls<br>",
+"/exploit<br>",
+"/academic<br>",
+"/philosophy<br>",
+"/anxiety<br>",
+"useful.txt<br>",
+"[XXXXXX@[REDACT]:/operations]# cat useful.txt<br>",
+"He was free, free in every way, free to behave like a fool or a machine,<br>",
+"free to accept, free to refuse, free to equivocate; to marry, to give up the game,<br>",
+"to drag this death weight about with him for years to come. He could do what he liked,<br>",
+"no one had the right to advise him, there would be for him no Good or Evil<br>",
+"unless he thought them into being.<br>",
+"[XXXXXX@[REDACT]:/operations]# scp * !/dump<br>",
+"<br>" ,
+"... Secure Copy operation initiated;<br>",
+"... Complete!<br>",
+"<br>" ,
+"[XXXXXX@[REDACT]:/operations]# scan tun0<br>",
+"/DIRECTIVE_port 0 - A3334411<br>",
+"/vantage_port 1 - A9888533<br>",
+"/marid_port 2 - A442998<br>",
+"/rogue_port 3 - A778934<br>",
+"[XXXXXX@[REDACT]:/operations]# run !/gridops/mbexploit_A<br>",
+"<br>" ,
+"... Performing /mail operations (144/144);<br>",
+"... ACK-ACK received (144/144)<br>",
+"... Complete!<br>",
+"<br>" ,
+"[XXXXXX@[REDACT]:/operations]# rm -rf * --nopreserve-root<br>",
+"[XXXXXX@[REDACT]:/operations]# exit<br>",
+"<br>",
+"<br>"];
 
 var numberOfLines = 0;
 var lineNumber = 0;
@@ -59,7 +108,7 @@ function quoteShuffle(){
     numberOfLines++;
   }
 
-  if (lineNumber < 15){
+  if (lineNumber < 48){
     $('#quoteShuffle').append('<div style="pointer-events: none; overflow-anchor: none;">' + quotes[lineNumber++] + '</div>');
   }
   else {
