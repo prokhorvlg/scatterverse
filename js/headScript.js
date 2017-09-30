@@ -17,7 +17,7 @@
 
 var quotes = ["OPS CONSOLE (2671-C)<br>",
 "******************************<br>",
-"* THIS IS A SECURE SYSTEM.   *<br>",
+"* THIS IS A SECURE SYSTEM. &nbsp;&nbsp;*<br>",
 "* ALL OPERATIONS ARE LOGGED. *<br>",
 "******************************<br>",
 "<br>" ,
