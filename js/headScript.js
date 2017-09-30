@@ -67,10 +67,13 @@ var quotes = ["OPS CONSOLE (2671-C)<br>",
 var numberOfLines = 0;
 var lineNumber = 0;
 
+var maxNumberOfLines = 13;
+
 $(document).ready(function() {
 
   // Detects browser; only runs certain scripts on desktop browsers.
   if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    maxNumberOfLines = 10;
   }
   else {
     $('.parallax_s1').parallax("50%", 0.1, true);
@@ -101,7 +104,7 @@ $(document).ready(function() {
 
 function quoteShuffle(){
 
-  if (numberOfLines > 12) {
+  if (numberOfLines > maxNumberOfLines) {
     $('#quoteShuffle').find('div').first().remove();
   }
   else {
