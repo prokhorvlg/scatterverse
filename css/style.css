@@ -242,3 +242,8 @@ header.masthead {
 #type680target {
   height: 200px;
 }
+@media (max-width: 1200px) {
+  .hideMobile {
+    display: none;
+  }
+}
